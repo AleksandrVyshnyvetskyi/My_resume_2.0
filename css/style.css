@@ -232,9 +232,8 @@ ul {
     color: var(--text-black-900);
 }
 
-.home .blur {
-    position: relative;
-    z-index: 1;
+.home .me-mobile {
+    display: none;
 }
 
 .home .home-info {
@@ -836,6 +835,20 @@ ul {
 
     .home .home-img {
         display: none;
+    }
+
+    .home .row {
+        justify-content: center;
+    }
+    
+    .home .me-mobile {
+        display: block;
+        text-align: center;
+    }
+    .home .me-mobile img {
+        max-width: 290px;
+        border: 2px solid var(--color-skin);
+        border-radius: 50%;
     }
 
     .contact .contact-info-item,
