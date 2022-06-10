@@ -633,7 +633,7 @@ ul {
     font-size: 40px;
     line-height: 60px;
     color: var(--color-skin);
-    transition: all 0.3s ease;
+    transition: all 0.7s ease;
 }
 
 .services .service-item .service-item-inner:hover .icon .fa {
@@ -788,6 +788,10 @@ ul {
 
 .contact .contact-form .form-item .form-control:hover {
     border: 1px solid var(--color-skin);
+    color: var(--color-skin);
+}
+
+.contact .contact-form .form-item .form-control:hover::placeholder {
     color: var(--color-skin);
 }
 
