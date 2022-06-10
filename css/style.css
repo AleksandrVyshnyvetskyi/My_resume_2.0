@@ -323,7 +323,8 @@ ul {
 
 .home .home-img img {
     margin: auto;
-    border-radius: 5px;
+    border: 0;
+    border-radius: 25px;
 }
 
 /* Home END */
@@ -824,6 +825,10 @@ ul {
         display: block;
         margin-left: 0;
     }
+
+        .home .home-img img {
+        border: 2px solid var(--color-skin);
+}
 }
 
 @media (max-width:991px) {
