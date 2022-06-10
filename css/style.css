@@ -442,7 +442,7 @@ ul {
     bottom: 0;
     transform: scaleX(0);
     transform-origin: left;
-    transition: transform .25s ease;
+    transition: transform .5s ease;
 }
 
 .cont:hover::after {
@@ -702,7 +702,7 @@ ul {
 .portfolio .portfolio-item-inner .portfolio-img img {
     width: 100%;
     display: block;
-    transition: all 0.3s ease;
+    transition: all 0.7s ease;
 }
 .portfolio .portfolio-item-inner .portfolio-img img:hover{
     transform: scale(1.5);
