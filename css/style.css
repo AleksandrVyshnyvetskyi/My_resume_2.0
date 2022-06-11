@@ -48,10 +48,6 @@ ul {
     padding-bottom: 70px;
 }
 
-.hidden {
-    display: none !important;
-}
-
 .main-content {
     padding-left: 270px;
 }
@@ -833,10 +829,6 @@ ul {
         display: block;
         margin-left: 0;
     }
-
-        .home .home-img img {
-        border: 2px solid var(--color-skin);
-}
 }
 
 @media (max-width:991px) {
@@ -860,6 +852,7 @@ ul {
     }
     .home .me-mobile img {
         max-width: 290px;
+        padding: 5px;
         border: 2px solid var(--color-skin);
         border-radius: 50%;
     }
