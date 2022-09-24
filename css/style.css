@@ -177,7 +177,7 @@ ul {
     position: relative;
 }
 
-.aside .logo a::before {
+.aside .logo div::before {
     content: '';
     position: absolute;
     width: 20px;
@@ -188,7 +188,7 @@ ul {
     left: 0;
 }
 
-.aside .logo a::after {
+.aside .logo div::after {
     content: '';
     position: absolute;
     width: 20px;
@@ -199,10 +199,14 @@ ul {
     right: 0;
 }
 
-.aside .logo a span {
+.aside .logo div span {
     font-family: 'Clicker Script', cursive;
     font-size: 40px;
     color: var(--color-skin);
+}
+
+.aside .logo div span .icon-logo{
+    fill: currentColor;
 }
 
 .aside .nav-toggler {
