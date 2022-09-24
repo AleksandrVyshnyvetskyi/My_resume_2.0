@@ -3,6 +3,7 @@ const navList = document.querySelectorAll("li");
 const totalNav = navList.length;
 const allSections = document.querySelectorAll(".section");
 const totalSections = allSections.length;
+
 for (let i = 0; i < totalNav; i++) {
   const link = navList[i].querySelector("a");
   link.addEventListener("click", function () {

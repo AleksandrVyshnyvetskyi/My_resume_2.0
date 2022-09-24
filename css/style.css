@@ -168,7 +168,7 @@ ul {
     text-transform: capitalize;
 }
 
-.aside .logo a {
+.aside .logo div {
     color: var(--text-black-900);
     font-weight: 700;
     padding: 15px 20px;
@@ -177,7 +177,7 @@ ul {
     position: relative;
 }
 
-.aside .logo div::before {
+/* .aside .logo div::before {
     content: '';
     position: absolute;
     width: 20px;
@@ -197,7 +197,7 @@ ul {
     border-right: 5px solid var(--color-skin);
     top: 0;
     right: 0;
-}
+} */
 
 .aside .logo div span {
     font-family: 'Clicker Script', cursive;
