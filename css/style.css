@@ -164,48 +164,13 @@ ul {
 .aside .logo {
     position: absolute;
     top: 50px;
-    font-size: 30px;
-    text-transform: capitalize;
-}
-
-.aside .logo div {
-    color: var(--text-black-900);
-    font-weight: 700;
     padding: 15px 20px;
-    font-size: 30px;
-    letter-spacing: 5px;
-    position: relative;
-}
-
-/* .aside .logo div::before {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-bottom: 5px solid var(--color-skin);
-    border-left: 5px solid var(--color-skin);
-    bottom: 0;
-    left: 0;
-}
-
-.aside .logo div::after {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-top: 5px solid var(--color-skin);
-    border-right: 5px solid var(--color-skin);
-    top: 0;
-    right: 0;
-} */
-
-.aside .logo div span {
-    font-family: 'Clicker Script', cursive;
-    font-size: 40px;
+    display: flex;
+    width: 200px;
     color: var(--color-skin);
 }
 
-.aside .logo div span .icon-logo{
+.aside .logo .icon-logo{
     fill: currentColor;
 }
 
