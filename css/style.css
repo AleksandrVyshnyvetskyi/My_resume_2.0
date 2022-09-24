@@ -285,7 +285,7 @@ ul {
 }
 
 .aside .nav li a i {
-    margin-right: 15px;
+    margin-right: 10px;
 }
 
 /* Aside END*/
@@ -755,7 +755,7 @@ ul {
     overflow: hidden;
     transition: all 0.3s ease;
     background-color: var(--bg-black-100);
-    height: 226px;
+/*     height: 226px; */
 }
 
 .portfolio .portfolio-item-inner:hover {
@@ -774,7 +774,7 @@ ul {
 
 .portfolio .portfolio-item-inner .portfolio-img img {
     width: 100%;
-    height: 182px;
+/*     height: 182px; */
     display: block;
     border-radius: 8px;
     transition: all 0.7s ease;
