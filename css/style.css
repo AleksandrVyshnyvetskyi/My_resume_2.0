@@ -202,6 +202,7 @@ ul {
 .aside .logo a span {
     font-family: 'Clicker Script', cursive;
     font-size: 40px;
+    color: var(--color-skin);
 }
 
 .aside .nav-toggler {
