@@ -4,6 +4,10 @@ const styleSwitcher = document.querySelector(".style-switcher");
 
 styleSwitcherToggle.addEventListener("click", () => {
  styleSwitcher.classList.toggle("open");
+  setTimeout(() => {
+   if(styleSwitcher.classList.contains("open")){
+   styleSwitcher.classList.remove("open")};
+}, 5000);
 });
 
 const closeSwitcherOnClick = document.addEventListener('click', (event) => {
@@ -20,9 +24,10 @@ const closeSwitcherOnEsc = document.addEventListener('keydown', (event) => {
 });
 
 const closeSwitcherOnScroll = document.addEventListener("scroll", () => {
-  if (styleSwitcher.classList.contains("open")) {
-    styleSwitcher.classList.remove("open");
-  }
+     styleSwitcher.classList.remove("open");
+  // if (styleSwitcher.classList.contains("open")) {
+  //   styleSwitcher.classList.remove("open");
+  // }
 });
 
 // ========================= Theme colors =========================
