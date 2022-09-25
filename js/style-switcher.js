@@ -1,39 +1,28 @@
 // ========================= Toggle style switcher =========================
-// const styleSwitcherToggle = document.querySelector(".style-switcher-toggler");
-// styleSwitcherToggle.addEventListener("click", () => {
-//   document.querySelector(".style-switcher").classList.toggle("open");
-// });
-
-// //  Hide style - switcher on scroll
-
-// window.addEventListener("scroll", () => {
-//   if (document.querySelector(".style-switcher").classList.contains("open")) {
-//     document.querySelector(".style-switcher").classList.remove("open");
-//   }
-// });
-
 const styleSwitcherToggle = document.querySelector(".style-switcher-toggler");
-const styleSwitcher =  document.querySelector(".style-switcher");
+const styleSwitcher = document.querySelector(".style-switcher");
 
 styleSwitcherToggle.addEventListener("click", () => {
-  styleSwitcher.classList.toggle("open");
+ styleSwitcher.classList.toggle("open");
 });
 
-//  Hide style - switcher on scroll
+const closeSwitcherOnClick = document.addEventListener('click', (event) => {
+  const container = document.querySelector("div");
+    if(event.target === container) {
+        styleSwitcher.classList.remove("open");
+    }
+});
 
-window.addEventListener("scroll", () => {
+const closeSwitcherOnEsc = document.addEventListener('keydown', (event) => {
+    if (event.code === 'Escape') {
+         styleSwitcher.classList.remove("open");
+    }
+});
+
+const closeSwitcherOnScroll = document.addEventListener("scroll", () => {
   if (styleSwitcher.classList.contains("open")) {
     styleSwitcher.classList.remove("open");
   }
-
-  if (event.target !==  styleSwitcher) {
-   styleSwitcher.classList.remove("open");
-  }
-
-  if (code === 'Escape') {
-    styleSwitcher.classList.remove("open");
-  }
-	
 });
 
 // ========================= Theme colors =========================
