@@ -47,14 +47,21 @@ function asideSectionTogglerBtn() {
   }
 }
 
-const closeAsideOnEsc = document.addEventListener('keydown', (event) => {
-    if (event.code === 'Escape') {
-         aside.classList.remove("open");
+const closeAsideOnEsc = document.addEventListener("keydown", (event) => {
+  if (aside.classList.contains("open"))
+    if (event.code === "Escape") {
+      aside.classList.remove("open");
+      for (let i = 0; i < totalSections; i++) {
+        allSections[i].classList.toggle("open");
+      }
     }
 });
 
-const closeNavTogglerBtnOnEsc = document.addEventListener('keydown', (event) => {
-    if (event.code === 'Escape') {
-         navTogglerBtn.classList.remove("open");
+const closeNavTogglerBtnOnEsc = document.addEventListener(
+  "keydown",
+  (event) => {
+    if (event.code === "Escape") {
+      navTogglerBtn.classList.remove("open");
     }
-});
+  }
+);
