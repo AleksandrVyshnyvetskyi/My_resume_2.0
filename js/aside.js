@@ -37,12 +37,6 @@ const aside = document.querySelector(".aside");
 
 navTogglerBtn.addEventListener("click", () => {
   asideSectionTogglerBtn();
-  setTimeout(() => {  
-      aside.classList.remove("open");
-}, 5000);
-  setTimeout(() => {  
-      navTogglerBtn.classList.remove("open");
-}, 5000);
 });
 
 function asideSectionTogglerBtn() {
