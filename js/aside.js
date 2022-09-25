@@ -37,6 +37,10 @@ const aside = document.querySelector(".aside");
 
 navTogglerBtn.addEventListener("click", () => {
   asideSectionTogglerBtn();
+  setTimeout(() => {
+    if(aside.classList.contains("open")){
+   aside.classList.remove("open")};
+}, 5000);
 });
 
 function asideSectionTogglerBtn() {
@@ -46,3 +50,9 @@ function asideSectionTogglerBtn() {
     allSections[i].classList.toggle("open");
   }
 }
+
+const closeAsideOnEsc = document.addEventListener('keydown', (event) => {
+    if (event.code === 'Escape') {
+         aside.classList.remove("open");
+    }
+});
