@@ -156,16 +156,17 @@ ul {
     top: 0;
     z-index: 10;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     transition: all 0.3s ease;
 }
 
 .aside .logo {
-    position: absolute;
-    top: 50px;
+/*     position: absolute;
+    top: 50px; */
     padding: 15px 20px;
-    display: flex;
+/*     display: flex; */
     width: 200px;
     color: var(--color-skin);
 }
