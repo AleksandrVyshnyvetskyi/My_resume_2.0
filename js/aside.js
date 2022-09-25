@@ -37,11 +37,11 @@ const aside = document.querySelector(".aside");
 
 navTogglerBtn.addEventListener("click", () => {
   asideSectionTogglerBtn();
-  setTimeout(() => {
-    if(aside.classList.contains("open")){
+  setTimeout(() => {  
       aside.classList.remove("open");
-      navTogglerBtn.classList.remove("open");;
-    };
+}, 5000);
+  setTimeout(() => {  
+      navTogglerBtn.classList.remove("open");
 }, 5000);
 });
 
@@ -56,6 +56,11 @@ function asideSectionTogglerBtn() {
 const closeAsideOnEsc = document.addEventListener('keydown', (event) => {
     if (event.code === 'Escape') {
          aside.classList.remove("open");
+    }
+});
+
+const closeNavTogglerBtnOnEsc = document.addEventListener('keydown', (event) => {
+    if (event.code === 'Escape') {
          navTogglerBtn.classList.remove("open");
     }
 });
