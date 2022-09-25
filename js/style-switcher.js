@@ -1,15 +1,39 @@
 // ========================= Toggle style switcher =========================
+// const styleSwitcherToggle = document.querySelector(".style-switcher-toggler");
+// styleSwitcherToggle.addEventListener("click", () => {
+//   document.querySelector(".style-switcher").classList.toggle("open");
+// });
+
+// //  Hide style - switcher on scroll
+
+// window.addEventListener("scroll", () => {
+//   if (document.querySelector(".style-switcher").classList.contains("open")) {
+//     document.querySelector(".style-switcher").classList.remove("open");
+//   }
+// });
+
 const styleSwitcherToggle = document.querySelector(".style-switcher-toggler");
+const styleSwitcher =  document.querySelector(".style-switcher");
+
 styleSwitcherToggle.addEventListener("click", () => {
-  document.querySelector(".style-switcher").classList.toggle("open");
+  styleSwitcher.classList.toggle("open");
 });
 
 //  Hide style - switcher on scroll
 
 window.addEventListener("scroll", () => {
-  if (document.querySelector(".style-switcher").classList.contains("open")) {
-    document.querySelector(".style-switcher").classList.remove("open");
+  if (styleSwitcher.classList.contains("open")) {
+    styleSwitcher.classList.remove("open");
   }
+
+  if (event.target !==  styleSwitcher) {
+   styleSwitcher.classList.remove("open");
+  }
+
+  if (code === 'Escape') {
+    styleSwitcher.classList.remove("open");
+  }
+	
 });
 
 // ========================= Theme colors =========================
