@@ -64,7 +64,7 @@ window.addEventListener("load", () => {
 
 // const className = "color";
 
-// сгенерить элементы для каждого из цветов
+// // сгенерить элементы для каждого из цветов
 // const colorSelect = document.querySelector(".colors");
 // colorSelect.innerHTML = colors
 //   .map(
@@ -73,22 +73,22 @@ window.addEventListener("load", () => {
 //   )
 //   .join("\n");
 
-// для новых посетителей
+// // для новых посетителей
 // const defaultSettings = {
 //   index: 3,
 //   isDark: false,
 // };
 
-// применить все настройки
+// // применить все настройки
 // const applySettings = (settings) => {
 //   const { index, isDark } = settings;
 
-// день-ночь
-// document
-//   .querySelector(":root")
-//   .style.setProperty("--skin-color", colors[index]);
+//   // день-ночь
+//   document
+//     .querySelector(":root")
+//     .style.setProperty("--skin-color", colors[index]);
 
-// выбранный цвет
+//   // выбранный цвет
 //   const i = document.querySelector(".day-night i");
 //   i.classList[isDark ? "remove" : "add"]("fa-sun");
 //   i.classList[isDark ? "add" : "remove"]("fa-moon");
@@ -96,7 +96,7 @@ window.addEventListener("load", () => {
 
 // const LS_KEY = "myColorSettings";
 
-// обработчик доступа к настройкам
+// // обработчик доступа к настройкам
 // const storeAndApply = {
 //   get(obj, prop) {
 //     return obj[prop];
@@ -112,10 +112,10 @@ window.addEventListener("load", () => {
 // const savedSettings = JSON.parse(localStorage.getItem(LS_KEY));
 // const settings = new Proxy(savedSettings || defaultSettings, storeAndApply);
 
-// при загрузке
+// // при загрузке
 // window.addEventListener("DOMContentLoaded", () => applySettings(settings));
 
-// выбор цвета
+// // выбор цвета
 // colorSelect.addEventListener("click", (event) => {
 //   const { target } = event;
 //   if (!target.classList.contains(className)) {
@@ -126,7 +126,7 @@ window.addEventListener("load", () => {
 //   settings.index = Number(index);
 // });
 
-// light or dark
+// // light or dark
 // document.querySelector(".day-night").addEventListener("click", () => {
 //   settings.isDark = !settings.isDark;
 // });

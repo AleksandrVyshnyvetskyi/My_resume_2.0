@@ -335,6 +335,10 @@ ul {
     position: relative;
 }
 
+.home .home-img img {
+    width: 500px;
+}
+
 .home-img::after {
     content: '';
     position: absolute;
@@ -342,7 +346,7 @@ ul {
     width: 80px;
     border-bottom: 10px solid var(--color-skin);
     border-right: 10px solid var(--color-skin);
-    right: 40px;
+    right: -20px;
     bottom: -20px;
 }
 
@@ -906,12 +910,20 @@ ul {
     .home .me-mobile {
         display: block;
         text-align: center;
-    }
-    .home .me-mobile img {
-        max-width: 290px;
-        padding: 5px;
         border: 2px solid var(--color-skin);
         border-radius: 50%;
+        height: 280px;
+    }
+    .home .me-mobile img {
+        width: 280px;
+        padding: 5px;
+        object-fit: cover
+        
+    }
+
+    .hello {
+        margin-top: 40px;
+        text-align: center;
     }
 
     .contact .contact-info-item,
