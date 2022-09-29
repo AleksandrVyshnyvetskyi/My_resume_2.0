@@ -51,7 +51,15 @@
     />
     <link rel="stylesheet" href="css/style-switcher.css" />
   </head>
-  <body>
+  <body class="dark">
+    <script>
+      if (localStorage.getItem("theme") !== "dark")
+        document.body.classList.remove("dark");
+    </script>
+    <script>
+      if (localStorage.getItem("skin-color") !== null)
+        document.documentElement.style.setProperty("--skin-color", color);
+    </script>
     <!-- ===== Main Conteiner START ===== -->
     <div class="main-container">
       <!-- ===== Aside START ===== -->
@@ -92,7 +100,7 @@
         <div class="container">
           <div class="row">
             <div class="me-mobile">
-              <img src="./css/img/my-photo.png" alt="Me" />
+              <img src="./css/img/my-photo.webp" alt="Me" />
             </div>
             <div class="home-info">
               <h3 class="hello">
@@ -120,7 +128,7 @@
               >
             </div>
             <div class="home-img">
-              <img src="./css/img/my-photo.png" alt="Me" />
+              <img src="./css/img/my-photo.webp" alt="Me" />
             </div>
           </div>
         </div>
@@ -186,8 +194,8 @@
                     <div class="info-item">
                       <p>
                         Phone :
-                        <a class="cont" href="tel:+380962876264"
-                          >+380 96 287 6264</a
+                        <a class="cont" href="tel:+380660229626"
+                          >+38 066 022 96 26</a
                         >
                       </p>
                     </div>
@@ -212,7 +220,7 @@
                           target="_blank"
                           href="https://kdpu.edu.ua/en/"
                         >
-                          <span>Kryvyi Rih State Pedagogical University</span>
+                          <span>KR St. Pedagogical University</span>
                         </a>
                       </p>
                     </div>
