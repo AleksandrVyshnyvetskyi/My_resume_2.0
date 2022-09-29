@@ -30,17 +30,9 @@ const closeSwitcherOnScroll = document.addEventListener("scroll", () => {
 
 // ========================= Theme colors =========================
 
-const alternateStyles = document.querySelectorAll(".alternate-style");
-function setActiveStyle(color) {
-  alternateStyles.forEach((style) => {
-    if (color === style.getAttribute("title")) {
-      style.removeAttribute("disabled");
-      document.documentElement.style.setProperty("--skin-color", color);
-      localStorage.setItem("skin-color", color);
-    } else {
-      style.setAttribute("disabled", "true");
-    }
-  });
+function setColor(color) {
+  document.documentElement.style.setProperty("--color-skin", color);
+  localStorage.setItem("skin-color", color);
 }
 
 // ========================= Theme Light and Dark mode =========================
