@@ -23,7 +23,6 @@ const closeSwitcherOnEsc = document.addEventListener("keydown", (event) => {
 });
 
 const closeSwitcherOnScroll = document.addEventListener("scroll", () => {
-  // styleSwitcher.classList.remove("open");
   if (styleSwitcher.classList.contains("open")) {
     styleSwitcher.classList.remove("open");
   }
@@ -42,7 +41,7 @@ function setActiveStyle(color) {
   });
 }
 
-// // ========================= Theme Light and Dark mode =========================
+// ========================= Theme Light and Dark mode =========================
 
 const dayNight = document.querySelector(".day-night");
 dayNight.addEventListener("click", () => {
