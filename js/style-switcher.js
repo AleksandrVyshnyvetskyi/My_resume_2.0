@@ -33,22 +33,22 @@ const closeSwitcherOnScroll = document.addEventListener("scroll", () => {
 function setColor(color) {
   document.documentElement.style.setProperty("--color-skin", color);
   localStorage.setItem("skin-color", color);
-  const myPhoto = document.querySelector(".photo");
-  if (localStorage.getItem("skin-color") === "#fa5b0f") {
-    myPhoto.setAttribute("src", "./css/img/my-photo/my-photo.webp");
-  }
-  if (localStorage.getItem("skin-color") === "#ec1839") {
-    myPhoto.setAttribute("src", "./css/img/my-photo/my-photo-red.png");
-  }
-  if (localStorage.getItem("skin-color") === "#37b182") {
-    myPhoto.setAttribute("src", "./css/img/my-photo/my-photo-green.png");
-  }
-  if (localStorage.getItem("skin-color") === "#1854b4") {
-    myPhoto.setAttribute("src", "./css/img/my-photo/my-photo-blue.png");
-  }
-  if (localStorage.getItem("skin-color") === "#9718ff") {
-    myPhoto.setAttribute("src", "./css/img/my-photo/my-photo-violet.png");
-  }
+  // const myPhoto = document.querySelector(".photo");
+  // if (localStorage.getItem("skin-color") === "#fa5b0f") {
+  //   myPhoto.setAttribute("src", "./css/img/my-photo/my-photo.webp");
+  // }
+  // if (localStorage.getItem("skin-color") === "#ec1839") {
+  //   myPhoto.setAttribute("src", "./css/img/my-photo/my-photo-red.png");
+  // }
+  // if (localStorage.getItem("skin-color") === "#37b182") {
+  //   myPhoto.setAttribute("src", "./css/img/my-photo/my-photo-green.png");
+  // }
+  // if (localStorage.getItem("skin-color") === "#1854b4") {
+  //   myPhoto.setAttribute("src", "./css/img/my-photo/my-photo-blue.png");
+  // }
+  // if (localStorage.getItem("skin-color") === "#9718ff") {
+  //   myPhoto.setAttribute("src", "./css/img/my-photo/my-photo-violet.png");
+  // }
 }
 
 // ========================= Theme Light and Dark mode =========================
