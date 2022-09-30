@@ -22,11 +22,6 @@
       if (localStorage.getItem("theme") !== "dark")
         document.body.classList.remove("dark");
     </script>
-    <script>
-      const color = localStorage.getItem("skin-color");
-      if (localStorage.getItem("skin-color") !== null)
-        document.documentElement.style.setProperty("--color-skin", color);
-    </script>
     <!-- ===== Main Conteiner START ===== -->
     <div class="main-container">
       <!-- ===== Aside START ===== -->
@@ -526,13 +521,13 @@
           </h4>
           <!-- ===== Contact form START ===== -->
           <div class="row">
-            <div class="contact-form pad-15">
+            <form class="contact-form pad-15" autocomplete="off">
               <div class="row">
                 <div class="form-item col-6 pad-15">
                   <div class="form-group">
                     <input
                       type="text"
-                      class="form-control"
+                      class="form-control _req"
                       placeholder="Name"
                     />
                   </div>
@@ -541,8 +536,9 @@
                   <div class="form-group">
                     <input
                       type="email"
-                      class="form-control"
+                      class="form-control _req"
                       placeholder="Email"
+                      autocomplete="off"
                     />
                   </div>
                 </div>
@@ -552,7 +548,7 @@
                   <div class="form-group">
                     <input
                       type="text"
-                      class="form-control"
+                      class="form-control _req"
                       placeholder="Subject"
                     />
                   </div>
@@ -562,7 +558,7 @@
                 <div class="form-item col-12 pad-15">
                   <div class="form-group">
                     <textarea
-                      class="form-control"
+                      class="form-control _req"
                       name=""
                       id=""
                       placeholder="Message"
@@ -575,7 +571,7 @@
                   <button type="submit" class="btn">Send Message</button>
                 </div>
               </div>
-            </div>
+            </form>
           </div>
           <!-- ===== Contact form END ===== -->
         </div>
@@ -630,5 +626,6 @@
     <script src="js/animation.js" type="module"></script>
     <script src="js/style-switcher.js"></script>
     <script src="js/aside.js" type="module"></script>
+    <script src="js/form.js" type="module"></script>
   </body>
 </html>

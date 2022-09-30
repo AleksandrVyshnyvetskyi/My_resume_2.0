@@ -30,25 +30,35 @@ const closeSwitcherOnScroll = document.addEventListener("scroll", () => {
 
 // ========================= Theme colors =========================
 
+const color = localStorage.getItem("skin-color");
+if (localStorage.getItem("skin-color") !== null) {
+  document.documentElement.style.setProperty("--color-skin", color);
+  toggleMobilePhoto();
+}
+
 function setColor(color) {
   document.documentElement.style.setProperty("--color-skin", color);
   localStorage.setItem("skin-color", color);
-  // const myPhoto = document.querySelector(".photo");
-  // if (localStorage.getItem("skin-color") === "#fa5b0f") {
-  //   myPhoto.setAttribute("src", "./css/img/my-photo/my-photo.webp");
-  // }
-  // if (localStorage.getItem("skin-color") === "#ec1839") {
-  //   myPhoto.setAttribute("src", "./css/img/my-photo/my-photo-red.png");
-  // }
-  // if (localStorage.getItem("skin-color") === "#37b182") {
-  //   myPhoto.setAttribute("src", "./css/img/my-photo/my-photo-green.png");
-  // }
-  // if (localStorage.getItem("skin-color") === "#1854b4") {
-  //   myPhoto.setAttribute("src", "./css/img/my-photo/my-photo-blue.png");
-  // }
-  // if (localStorage.getItem("skin-color") === "#9718ff") {
-  //   myPhoto.setAttribute("src", "./css/img/my-photo/my-photo-violet.png");
-  // }
+  toggleMobilePhoto();
+}
+
+function toggleMobilePhoto() {
+  const myPhoto = document.querySelector(".photo");
+  if (localStorage.getItem("skin-color") === "#fa5b0f") {
+    myPhoto.setAttribute("src", "./css/img/my-photo/my-photo.webp");
+  }
+  if (localStorage.getItem("skin-color") === "#ec1839") {
+    myPhoto.setAttribute("src", "./css/img/my-photo/my-photo-red.webp");
+  }
+  if (localStorage.getItem("skin-color") === "#37b182") {
+    myPhoto.setAttribute("src", "./css/img/my-photo/my-photo-green.webp");
+  }
+  if (localStorage.getItem("skin-color") === "#1854b4") {
+    myPhoto.setAttribute("src", "./css/img/my-photo/my-photo-blue.webp");
+  }
+  if (localStorage.getItem("skin-color") === "#9718ff") {
+    myPhoto.setAttribute("src", "./css/img/my-photo/my-photo-violet.webp");
+  }
 }
 
 // ========================= Theme Light and Dark mode =========================
