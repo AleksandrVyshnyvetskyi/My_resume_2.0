@@ -75,7 +75,7 @@ form.addEventListener("submit", function (e) {
     message += `<b>${this.name.value}</b>\n`;
     message += `<i>📧Email:  </i>\n`;
     message += `<b>${this.email.value}</b>\n`;
-    message += `<i>Он(а) работает в  </i><b>"${this.subject.value}"</b>\n`;
+    message += `<i>Он(а) работает в  </i></b>\n`;
     message += `<b>"${this.subject.value}"</b>\n`;
     message += `<i>Вот сообщение, которое он(а) оставил(а):</i>\n`;
     message += `<b>"${this.message.value}"</b>\n`;
