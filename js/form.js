@@ -71,9 +71,12 @@ form.addEventListener("submit", function (e) {
     this.message.value !== ""
   ) {
     let message = `<i>✋Привет ! Тебе пришел новый офер !</i>\n`;
-    message += `<i>😎Офер пришел от:  </i><b>${this.name.value}</b>\n`;
-    message += `<i>📧Email:  </i><b>${this.email.value}</b>\n`;
+    message += `<i>😎Офер пришел от:  </i>\n`;
+    message += `<b>${this.name.value}</b>\n`;
+    message += `<i>📧Email:  </i>\n`;
+    message += `<b>${this.email.value}</b>\n`;
     message += `<i>Он(а) работает в  </i><b>"${this.subject.value}"</b>\n`;
+    message += `<b>"${this.subject.value}"</b>\n`;
     message += `<i>Вот сообщение, которое он(а) оставил(а):</i>\n`;
     message += `<b>"${this.message.value}"</b>\n`;
 
