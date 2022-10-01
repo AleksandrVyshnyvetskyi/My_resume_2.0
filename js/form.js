@@ -55,7 +55,7 @@
 //   }
 // });
 
-const TOKEN = "5439825587:AAHmX5b7EerFzZOmmefFRROXlly1AsK6LI0";
+const TOKEN = "5439825587:AAFiZeos74ZIV8HS4lMgzvMsHS5iR1RJGPc";
 const CHAT_ID = "-1001518217052";
 const URL_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 const form = document.querySelector(".contact-form");
@@ -65,26 +65,26 @@ form.addEventListener("submit", function (e) {
   formValidate();
 
   if (
-    this.name.value !== "" ||
-    this.email.value !== "" ||
-    this.subject.value !== "" ||
+    this.name.value !== "" &&
+    this.email.value !== "" &&
+    this.subject.value !== "" &&
     this.message.value !== ""
   ) {
-    let message = `<i>✋Привет ! Тебе пришел новый офер !</i>\n`;
-    message += `<i>😎Офер пришел от:  </i>\n`;
-    message += `<b>${this.name.value}</b>\n`;
-    message += `<i>📧Email:  </i>\n`;
-    message += `<b>${this.email.value}</b>\n`;
-    message += `<i>Он(а) работает в  </i></b>\n`;
-    message += `<b>"${this.subject.value}"</b>\n`;
-    message += `<i>Вот сообщение, которое он(а) оставил(а):</i>\n`;
-    message += `<b>"${this.message.value}"</b>\n`;
+    let messageToBot = `<i>✋Привет ! Тебе пришел новый офер !</i>\n`;
+    messageToBot += `<i>😎Офер пришел от:  </i>\n`;
+    messageToBot += `<b>${this.name.value}</b>\n`;
+    messageToBot += `<i>📧Email:  </i>\n`;
+    messageToBot += `<b>${this.email.value}</b>\n`;
+    messageToBot += `<i>Он(а) работает в  </i>\n`;
+    messageToBot += `<b>"${this.subject.value}"</b>\n`;
+    messageToBot += `<i>Вот сообщение, которое он(а) оставил(а):</i>\n`;
+    messageToBot += `<b>"${this.message.value}"</b>\n`;
 
     axios
       .post(URL_API, {
         chat_id: CHAT_ID,
         parse_mode: "html",
-        text: message,
+        text: messageToBot,
       })
       .then((res) => {
         this.name.value = "";
@@ -95,9 +95,14 @@ form.addEventListener("submit", function (e) {
         setTimeout(() => {
           togglerSendClass();
         }, "3000");
+      })
+      .catch((error) => {
+        console.log(error);
+        togglerErrorMessageClass();
+        setTimeout(() => {
+          togglerErrorMessageClass();
+        }, "3000");
       });
-    // .cath((error) => {})
-    // .finally(() => {});
   }
   if (
     this.name.value === "" ||
@@ -138,7 +143,14 @@ form.addEventListener("submit", function (e) {
   function togglerSendClass() {
     const formBox = document.querySelector(".contact-form-box ");
     formBox.classList.toggle("is-hiden");
-    const sending = document.querySelector(".sending");
+    const sending = document.querySelector(".js-sending__message--comlete");
+    sending.classList.toggle("is-hiden");
+  }
+
+  function togglerErrorMessageClass() {
+    const formBox = document.querySelector(".contact-form-box ");
+    formBox.classList.toggle("is-hiden");
+    const sending = document.querySelector(".js-sending__message--error");
     sending.classList.toggle("is-hiden");
   }
 });

@@ -531,9 +531,16 @@
           </h4>
           <!-- ===== Contact form START ===== -->
           <div class="row">
-            <form class="contact-form pad-15">
-              <div class="sending is-hiden">
-                <p class="sending__message">Your message has been sent!</p>
+            <form class="contact-form pad-15" autocomplete="off">
+              <div class="sending">
+                <p
+                  class="sending__message js-sending__message--comlete is-hiden"
+                >
+                  Your message has been sent!
+                </p>
+                <p class="sending__message js-sending__message--error is-hiden">
+                  Oops... An error has occurred, please try again
+                </p>
               </div>
               <div class="contact-form-box">
                 <div class="row">
@@ -544,6 +551,7 @@
                         name="name"
                         class="form-control _req"
                         placeholder="Name"
+                        autocomplete="off"
                       />
                     </div>
                   </div>
@@ -554,6 +562,7 @@
                         name="email"
                         class="form-control _req"
                         placeholder="Email"
+                        autocomplete="off"
                       />
                     </div>
                   </div>
@@ -566,6 +575,7 @@
                         name="subject"
                         class="form-control _req"
                         placeholder="Subject"
+                        autocomplete="off"
                       />
                     </div>
                   </div>
@@ -578,6 +588,7 @@
                         name="message"
                         id=""
                         placeholder="Message"
+                        autocomplete="off"
                       ></textarea>
                     </div>
                   </div>
