@@ -92,9 +92,9 @@ form.addEventListener("submit", function (e) {
         setTimeout(() => {
           togglerSendClass();
         }, "3000");
-      })
-      .cath((error) => {})
-      .finally(() => {});
+      });
+    // .cath((error) => {})
+    // .finally(() => {});
   }
   if (
     this.name.value === "" ||

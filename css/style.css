@@ -792,6 +792,11 @@ ul {
     color: var(--color-skin);
 }
 
+.contact .contact-info-item .icon .fa-brands {
+    font-size: 35px;
+    color: var(--color-skin);
+}
+
 .contact .contact-info-item h4 {
     font-size: 18px;
     font-weight: 700;
