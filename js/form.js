@@ -34,59 +34,63 @@ form.addEventListener("submit", function (e) {
         this.email.value = "";
         this.subject.value = "";
         this.message.value = "";
-        togglerSendClass();
-        setTimeout(() => {
-          togglerSendClass();
-        }, "3000");
+        Notiflix.Report.success(
+          "Super !",
+          "Your message has been sent!",
+          "Close",
+          {
+            svgSize: "200px",
+            titleFontSize: "24px",
+            messageFontSize: "20px",
+            buttonFontSize: "16px",
+            width: "300px",
+            backOverlay: true,
+            backOverlayClickToClose: true,
+          }
+        );
       })
       .catch((error) => {
-        togglerErrorMessageClass();
-        setTimeout(() => {
-          togglerErrorMessageClass();
-        }, "3000");
+        Notiflix.Report.failure(
+          "Oopps...",
+          "Something broke... Try again.",
+          "Close",
+          {
+            svgSize: "200px",
+            titleFontSize: "24px",
+            messageFontSize: "18px",
+            buttonFontSize: "16px",
+            width: "300px",
+            backOverlay: true,
+            backOverlayClickToClose: true,
+          }
+        );
       });
-  }
-  if (
-    this.name.value === "" ||
-    this.email.value === "" ||
-    this.subject.value === "" ||
-    this.message.value === ""
-  ) {
-    return alert("Please enter all areas 🤗");
   }
 
   function formValidate() {
     let formReq = document.querySelectorAll("._req");
     for (let index = 0; index < formReq.length; index++) {
       const input = formReq[index];
-      formRemoveError(input);
 
       if (input.classList.contains("_req")) {
         if (input.value === "") {
-          formAddError(input);
-        }
-        if (input.value !== "") {
-          formRemoveError(input);
+          Notiflix.Report.warning(
+            "Oopps...",
+            "Please fill in all fields",
+            "Close",
+            {
+              svgSize: "200px",
+              titleFontSize: "24px",
+              messageFontSize: "18px",
+              buttonFontSize: "16px",
+              width: "300px",
+              backOverlay: true,
+              backOverlayClickToClose: true,
+            }
+          );
         }
       }
     }
-  }
-
-  function formAddError(input) {
-    input.parentElement.classList.add("_error");
-    input.classList.add("_error");
-  }
-
-  function formRemoveError(input) {
-    input.parentElement.classList.remove("_error");
-    input.classList.remove("_error");
-  }
-
-  function togglerSendClass() {
-    const formBox = document.querySelector(".contact-form-box ");
-    formBox.classList.toggle("is-hiden");
-    const sending = document.querySelector(".js-sending__message--comlete");
-    sending.classList.toggle("is-hiden");
   }
 
   function togglerErrorMessageClass() {

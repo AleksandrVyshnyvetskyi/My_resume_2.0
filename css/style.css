@@ -816,42 +816,6 @@ ul {
     transition: all 0.3s ease;
 }
 
-.is-hiden {
-    opacity: 0;
-    visibility: hidden;
-    height: 0;
-    /* display: none; */
-    transition: all 0.3s ease;
-}
-
-.sending {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    transition: all 0.3s ease;
-}
-
-.contact-form .sending .sending__message {
-    font-size: 32px;
-    margin-top: 80px;
-    font-weight: 700;
-    color: var(--color-skin);
-    transition: all 0.3s ease;
-    position: absolute;
-    top: 50%;
-    left: auto;
-    right: auto;
-    padding: 50px 20px;
-    border: 1px solid var(--color-skin);
-    border-radius: 20px;
-}
-
-.form-control._error {
-    box-shadow: 0 0 30px red;
-}
-
-
 .contact .contact-form .col-6 {
     flex: 0 0 50%;
     max-width: 50%;
@@ -864,6 +828,10 @@ ul {
 
 .contact .contact-form .form-item {
     margin-bottom: 30px;
+}
+
+.notiflix-report-message {
+    text-align: center;
 }
 
 .contact .contact-form .form-item .form-control {
