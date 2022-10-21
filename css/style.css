@@ -371,6 +371,10 @@ ul {
 
 /* About me START */
 
+.about {
+    display: flex;
+}
+
 .section-title h2 {
     font-size: 40px;
     font-weight: 700;
@@ -636,6 +640,10 @@ ul {
 
 /* Services START */
 
+.services{
+    display: flex;
+}
+
 .services .container {
     padding-bottom: 40px;
 }
@@ -703,6 +711,14 @@ ul {
 
 /* Portfolio START */
 
+.portfolio {
+    display: flex;
+}
+
+.portfolio .row {
+    justify-content: center;
+}
+
 .portfolio .container {
     padding-bottom: 40px;
 }
@@ -761,6 +777,14 @@ ul {
 /* Portfolio END */
 
 /* Contact START */
+
+.contact {
+    display: flex;
+}
+
+.contact .row {
+    justify-content: center;
+}
 
 .contact-title {
     color: var(--color-skin);
