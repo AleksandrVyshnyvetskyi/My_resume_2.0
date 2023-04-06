@@ -14,7 +14,7 @@ form.addEventListener("submit", function (e) {
     this.message.value !== ""
   ) {
     let messageToBot = `<i>✋Привет ! Тебе пришел новый офер !</i>\n`;
-    messageToBot += `<i>😎Офер пришел от:  </i>\n`;
+    messageToBot += `<i>😎 от:  </i>\n`;
     messageToBot += `<b>${this.name.value}</b>\n`;
     messageToBot += `<i>📧Email:  </i>\n`;
     messageToBot += `<b>${this.email.value}</b>\n`;
@@ -91,12 +91,5 @@ form.addEventListener("submit", function (e) {
         }
       }
     }
-  }
-
-  function togglerErrorMessageClass() {
-    const formBox = document.querySelector(".contact-form-box ");
-    formBox.classList.toggle("is-hiden");
-    const sending = document.querySelector(".js-sending__message--error");
-    sending.classList.toggle("is-hiden");
   }
 });

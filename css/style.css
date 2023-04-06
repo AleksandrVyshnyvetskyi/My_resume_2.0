@@ -438,9 +438,15 @@ ul {
 }
 
 .about .about-content .about-text p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.56;
     color: var(--text-black-700);
+    margin-bottom: 10px;
+    text-indent: 20px;
+}
+
+.about .about-content .about-text p:last-child{
+    margin-bottom: 0;
 }
 
 .about .about-content .personal-info {
