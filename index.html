@@ -1,658 +1,781 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./css/img/logo/logo.png" type="image/x-icon" />
-    <title>V.ALEKSANDR</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="./css/img/logo/logo.png" type="image/x-icon" />
+        <title>V.ALEKSANDR</title>
 
-    <!-- ===== CSS ===== -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="./js/library/notiflix-Notiflix-dfaf93f/dist/notiflix-3.2.5.min.css"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/skins/color-1.css" />
-    <!-- ===== Style Switcher ===== -->
-    <link rel="stylesheet" href="css/style-switcher.css" />
-  </head>
-  <body class="dark">
-    <script>
-      if (localStorage.getItem("theme") !== "dark")
-        document.body.classList.remove("dark");
-    </script>
-    <!-- ===== Main Conteiner START ===== -->
-    <div class="main-container">
-      <!-- ===== Aside START ===== -->
-      <div class="aside">
-        <div class="logo">
-          <svg>
-            <use
-              class="icon-logo"
-              href="./css/img/svg/sprite/symbol-defs.svg#icon-logo"
-            ></use>
-          </svg>
-        </div>
-        <div class="nav-toggler"><span></span></div>
-        <ul class="nav">
-          <li>
-            <a href="#home" class="active"><i class="fa fa-home"></i>Home</a>
-          </li>
-          <li>
-            <a href="#about"><i class="fa fa-user"></i>About</a>
-          </li>
-          <li>
-            <a href="#services"><i class="fa fa-list"></i>Service</a>
-          </li>
-          <li>
-            <a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a>
-          </li>
-          <li>
-            <a href="#contact"><i class="fa fa-comments"></i>Contact</a>
-          </li>
-        </ul>
-      </div>
-      <!-- ===== Aside END ===== -->
-    </div>
-    <!-- ===== Main Content START ===== -->
-    <div class="main-content">
-      <!-- ===== Home section START ===== -->
-      <section class="home section active" id="home">
-        <div class="container">
-          <div class="row">
-            <div class="me-mobile">
-              <img
-                class="photo"
-                src="./css/img/my-photo/my-photo.webp"
-                alt="Me"
-              />
-            </div>
-            <div class="home-info">
-              <h3 class="hello">
-                Hello, my name is
-                <a
-                  class="name"
-                  target="_blank"
-                  href="https://www.instagram.com/v.alexander21/"
-                  >Aleksandr Vyshnyvetskyi</a
-                >
-              </h3>
-              <h3 class="my-profession">I`m a <span class="typing"></span></h3>
-
-              <p>
-                "Programming is not about what you know, it's about what you can
-                figure out." - Chris Pine
-              </p>
-              <a
-                href="./download/Aleksandr Vyshnyvetskyi Front-End-dev.pdf"
-                class="btn"
-                download
-                >Download Resume</a
-              >
-            </div>
-            <div class="home-img">
-              <img src="./css/img/my-photo/my-photo.webp" alt="Me" />
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- ===== Home section END ===== -->
-      <!-- ===== About section START ===== -->
-      <section class="about section" id="about">
-        <div class="container">
-          <div class="row">
-            <div class="section-title">
-              <h2>About <span>Me</span></h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="about-content">
-              <div class="row">
-                <div class="about-text">
-                  <h3>
-                    I'm <span>Aleksander Vishnevetsky</span> and i'm a
-                    <span>Front-End developer</span>
-                  </h3>
-                  <p>
-                    Hello, I am a novice Front-End developer. I have experience
-                    in web development, adaptive and cross-platform projects. I
-                    have good knowledge of HTML5, CSS3, JS, as well as the React
-                    framework. I have also worked with Node.js. I have
-                    experience in using Git and other version control tools.
-                  </p>
-                  <p>
-                    My goal is to gain experience, learn, improve as a
-                    professional, and face new challenges in working on
-                    projects, become an expert in modern technologies and
-                    methods. I am an active, goal-oriented person and I love
-                    working in a team.
-                  </p>
-                  <p>
-                    I am confident in my ability to deliver quality work and
-                    achieve set goals. I am ready to work with other developers
-                    and learn new technologies to achieve a common goal. I am
-                    looking for an opportunity to gain my first work experience
-                    and continue my path in developing websites and
-                    applications.
-                  </p>
+        <!-- ===== CSS ===== -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="./js/library/notiflix-Notiflix-dfaf93f/dist/notiflix-3.2.5.min.css"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/skins/color-1.css" />
+        <!-- ===== Style Switcher ===== -->
+        <link rel="stylesheet" href="css/style-switcher.css" />
+    </head>
+    <body class="dark">
+        <script>
+            if (localStorage.getItem("theme") !== "dark")
+                document.body.classList.remove("dark");
+        </script>
+        <!-- ===== Main Conteiner START ===== -->
+        <div class="main-container">
+            <!-- ===== Aside START ===== -->
+            <div class="aside">
+                <div class="logo">
+                    <svg>
+                        <use
+                            class="icon-logo"
+                            href="./css/img/svg/sprite/symbol-defs.svg#icon-logo"
+                        ></use>
+                    </svg>
                 </div>
-              </div>
-              <div class="row">
-                <div class="personal-info">
-                  <div class="row">
-                    <div class="info-item">
-                      <p>Birthday : <span>21 jun 1994</span></p>
-                    </div>
-                    <div class="info-item">
-                      <p>Age : <span>28</span></p>
-                    </div>
-                    <div class="info-item">
-                      <p>
-                        Email :
-                        <a
-                          class="cont"
-                          subject="New order"
-                          href="mailto:vishniveckijj1994@gmail.com"
-                          >vishniveckijj1994@gmail.com</a
+                <div class="nav-toggler"><span></span></div>
+                <ul class="nav">
+                    <li>
+                        <a href="#home" class="active"
+                            ><i class="fa fa-home"></i>Home</a
                         >
-                      </p>
-                    </div>
-                    <div class="info-item">
-                      <p>
-                        Phone :
-                        <a class="cont" href="tel:+380660229626"
-                          >+38 (066) 022 96 26</a
+                    </li>
+                    <li>
+                        <a href="#about"><i class="fa fa-user"></i>About</a>
+                    </li>
+                    <li>
+                        <a href="#services"
+                            ><i class="fa fa-list"></i>Service</a
                         >
-                      </p>
-                    </div>
-                    <div class="info-item">
-                      <p>
-                        City :
-                        <span
-                          ><a
-                            class="cont"
-                            target="_blank"
-                            href="https://goo.gl/maps/qjeAboSLL2URVzhs6"
-                            >Kryvyi Rih | Ukraine</a
-                          ></span
+                    </li>
+                    <li>
+                        <a href="#portfolio"
+                            ><i class="fa fa-briefcase"></i>Portfolio</a
                         >
-                      </p>
-                    </div>
-                    <div class="info-item">
-                      <p>
-                        Education :
-
-                        <span
-                          ><a
-                            class="cont"
-                            target="_blank"
-                            href="https://kdpu.edu.ua/en/"
-                            >KR St. Pedagogical University</a
-                          ></span
+                    </li>
+                    <li>
+                        <a href="#contact"
+                            ><i class="fa fa-comments"></i>Contact</a
                         >
-                      </p>
+                    </li>
+                </ul>
+            </div>
+            <!-- ===== Aside END ===== -->
+        </div>
+        <!-- ===== Main Content START ===== -->
+        <div class="main-content">
+            <!-- ===== Home section START ===== -->
+            <section class="home section active" id="home">
+                <div class="container">
+                    <div class="row">
+                        <div class="me-mobile">
+                            <img
+                                class="photo"
+                                src="./css/img/my-photo/my-photo.webp"
+                                alt="Me"
+                            />
+                        </div>
+                        <div class="home-info">
+                            <h1 class="hello">
+                                Hello, my name is
+                                <a
+                                    class="name"
+                                    target="_blank"
+                                    href="https://www.instagram.com/v.alexander21/"
+                                    >Aleksandr Vyshnyvetskyi</a
+                                >
+                            </h1>
+                            <h3 class="my-profession">
+                                I`m a <span class="typing"></span>
+                            </h3>
+                            <p>
+                                "Programming is not about what you know, it's
+                                about what you can figure out." - Chris Pine
+                            </p>
+                            <a
+                                href="./download/Aleksandr Vyshnyvetskyi Front-End-dev.pdf"
+                                class="btn"
+                                download
+                                >Download Resume</a
+                            >
+                        </div>
+                        <div class="home-img">
+                            <img
+                                src="./css/img/my-photo/my-photo.webp"
+                                alt="Me"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ===== Home section END ===== -->
+            <!-- ===== About section START ===== -->
+            <section class="about section" id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title">
+                            <h2>About <span>Me</span></h2>
+                        </div>
                     </div>
                     <div class="row">
-                      <div class="buttons">
-                        <a
-                          href="#contact"
-                          class="btn hire-me"
-                          data-section-index="1"
-                          >Hire Me</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="skills">
-                  <div class="row">
-                    <div class="skill-item">
-                      <h5>HTML</h5>
-                      <div class="progress">
-                        <div class="progress-in" style="width: 86%"></div>
-                        <div class="skill-precent">86%</div>
-                      </div>
-                    </div>
-                    <div class="skill-item">
-                      <h5>CSS</h5>
-                      <div class="progress">
-                        <div class="progress-in" style="width: 83%"></div>
-                        <div class="skill-precent">83%</div>
-                      </div>
-                    </div>
-                    <div class="skill-item">
-                      <h5>JS</h5>
-                      <div class="progress">
-                        <div class="progress-in" style="width: 76%"></div>
-                        <div class="skill-precent">76%</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="education">
-                  <h3 class="title">Education</h3>
-                  <div class="row">
-                    <div class="timeline-box">
-                      <div class="timeline shadow-dark">
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h3 class="timeline-date">
-                            <i class="fa fa-calendar"> 2012 - 2017</i>
-                          </h3>
-                          <h4 class="timeline-title">
-                            Faculty of Natural Sciences
-                          </h4>
-                          <p class="timeline-text">
-                            Biologist. Teacher of Biology and Environmental
-                            Science. Practical Psychologist.
-                          </p>
+                        <div class="about-content">
+                            <div class="row">
+                                <div class="about-text">
+                                    <h3>
+                                        I'm
+                                        <span>Aleksander Vishnevetsky</span> and
+                                        i'm a
+                                        <span>Front-End developer</span>
+                                    </h3>
+                                    <p>
+                                        Hello, I am a novice Front-End
+                                        developer. I have experience in web
+                                        development, adaptive and cross-platform
+                                        projects. I have good knowledge of
+                                        HTML5, CSS3, JS, as well as the React
+                                        framework. I have also worked with
+                                        Node.js. I have experience in using Git
+                                        and other version control tools.
+                                    </p>
+                                    <p>
+                                        My goal is to gain experience, learn,
+                                        improve as a professional, and face new
+                                        challenges in working on projects,
+                                        become an expert in modern technologies
+                                        and methods. I am an active,
+                                        goal-oriented person and I love working
+                                        in a team.
+                                    </p>
+                                    <p>
+                                        I am confident in my ability to deliver
+                                        quality work and achieve set goals. I am
+                                        ready to work with other developers and
+                                        learn new technologies to achieve a
+                                        common goal. I am looking for an
+                                        opportunity to gain my first work
+                                        experience and continue my path in
+                                        developing websites and applications.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="personal-info">
+                                    <div class="row">
+                                        <div class="info-item">
+                                            <p>
+                                                Birthday :
+                                                <span>21 jun 1994</span>
+                                            </p>
+                                        </div>
+                                        <div class="info-item">
+                                            <p>Age : <span>29</span></p>
+                                        </div>
+                                        <div class="info-item">
+                                            <p>
+                                                Email :
+                                                <a
+                                                    class="cont"
+                                                    subject="New order"
+                                                    href="mailto:vishniveckijj1994@gmail.com"
+                                                    >vishniveckijj1994@gmail.com</a
+                                                >
+                                            </p>
+                                        </div>
+                                        <div class="info-item">
+                                            <p>
+                                                Phone :
+                                                <a
+                                                    class="cont"
+                                                    href="tel:+380660229626"
+                                                    >+38 (066) 022 96 26</a
+                                                >
+                                            </p>
+                                        </div>
+                                        <div class="info-item">
+                                            <p>
+                                                City :
+                                                <span
+                                                    ><a
+                                                        class="cont"
+                                                        target="_blank"
+                                                        href="https://goo.gl/maps/qjeAboSLL2URVzhs6"
+                                                        >Kryvyi Rih | Ukraine</a
+                                                    ></span
+                                                >
+                                            </p>
+                                        </div>
+                                        <div class="info-item">
+                                            <p>
+                                                Education :
+
+                                                <span
+                                                    ><a
+                                                        class="cont"
+                                                        target="_blank"
+                                                        href="https://kdpu.edu.ua/en/"
+                                                        >KR St. Pedagogical
+                                                        University</a
+                                                    ></span
+                                                >
+                                            </p>
+                                        </div>
+                                        <div class="row">
+                                            <div class="buttons">
+                                                <a
+                                                    href="#contact"
+                                                    class="btn hire-me"
+                                                    data-section-index="1"
+                                                    >Hire Me</a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skills">
+                                    <div class="row">
+                                        <div class="skill-item">
+                                            <h5>HTML</h5>
+                                            <div class="progress">
+                                                <div
+                                                    class="progress-in"
+                                                    style="width: 86%"
+                                                ></div>
+                                                <div class="skill-precent">
+                                                    86%
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <h5>CSS</h5>
+                                            <div class="progress">
+                                                <div
+                                                    class="progress-in"
+                                                    style="width: 83%"
+                                                ></div>
+                                                <div class="skill-precent">
+                                                    83%
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item">
+                                            <h5>JS</h5>
+                                            <div class="progress">
+                                                <div
+                                                    class="progress-in"
+                                                    style="width: 76%"
+                                                ></div>
+                                                <div class="skill-precent">
+                                                    76%
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="education">
+                                    <h3 class="title">Education</h3>
+                                    <div class="row">
+                                        <div class="timeline-box">
+                                            <div class="timeline shadow-dark">
+                                                <div class="timeline-item">
+                                                    <div
+                                                        class="circle-dot"
+                                                    ></div>
+                                                    <h3 class="timeline-date">
+                                                        <i
+                                                            class="fa fa-calendar"
+                                                        >
+                                                            2012 - 2017</i
+                                                        >
+                                                    </h3>
+                                                    <h4 class="timeline-title">
+                                                        Faculty of Natural
+                                                        Sciences
+                                                    </h4>
+                                                    <p class="timeline-text">
+                                                        Biologist. Teacher of
+                                                        Biology and
+                                                        Environmental Science.
+                                                        Practical Psychologist.
+                                                    </p>
+                                                </div>
+                                                <div class="timeline-item">
+                                                    <div
+                                                        class="circle-dot"
+                                                    ></div>
+                                                    <h3 class="timeline-date">
+                                                        <i
+                                                            class="fa fa-calendar"
+                                                        >
+                                                            2022</i
+                                                        >
+                                                    </h3>
+                                                    <h4 class="timeline-title">
+                                                        IT School GoIT
+                                                    </h4>
+                                                    <p class="timeline-text">
+                                                        Full stack developer
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="experience">
+                                    <h3 class="title">Certificates</h3>
+                                    <div class="row">
+                                        <div class="timeline-box">
+                                            <div class="timeline shadow-dark">
+                                                <div class="timeline-item">
+                                                    <div
+                                                        class="circle-dot"
+                                                    ></div>
+                                                    <h3
+                                                        class="timeline-certificatio-title"
+                                                    >
+                                                        <i
+                                                            class="fa-solid fa-medal"
+                                                        ></i>
+                                                        <p>
+                                                            Responsive Web
+                                                            Design
+                                                        </p>
+                                                    </h3>
+                                                    <p class="timeline-text">
+                                                        <a
+                                                            class="timeline-certificate-link"
+                                                            href="https://www.freecodecamp.org/certification/AleksandrV/responsive-web-design"
+                                                            target="_blank"
+                                                        >
+                                                            <img
+                                                                class="timeline-certificate-img"
+                                                                src="./css/img/certificates/Responsive-Web.webp"
+                                                                alt="Responsive Web Design certification"
+                                                            />
+                                                        </a>
+                                                    </p>
+                                                </div>
+                                                <!-- <div class="timeline-item">
+                                                    <div
+                                                        class="circle-dot"
+                                                    ></div>
+                                                    <h3 class="timeline-date">
+                                                        <i
+                                                            class="fa fa-calendar"
+                                                        >
+                                                            2022</i
+                                                        >
+                                                    </h3>
+                                                    <h4 class="timeline-title">
+                                                        Full Stack developer
+                                                    </h4>
+                                                    <p class="timeline-text">
+                                                        Lorem ipsum dolor sit,
+                                                        amet consectetur
+                                                        adipisicing elit. Culpa
+                                                        dolorum maiores delectus
+                                                        quae? Labore itaque quod
+                                                        asperiores id, omnis,
+                                                        veritatis quia
+                                                        laboriosam, nihil iure
+                                                        neque quis.
+                                                    </p>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h3 class="timeline-date">
-                            <i class="fa fa-calendar"> 2022</i>
-                          </h3>
-                          <h4 class="timeline-title">IT School GoIT</h4>
-                          <p class="timeline-text">Full stack developer</p>
+                    </div>
+                </div>
+            </section>
+            <!-- ===== About section END ===== -->
+            <!-- ===== Services section START ===== -->
+            <section class="section services" id="services">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title pad-15">
+                            <h2>Services</h2>
                         </div>
-                      </div>
                     </div>
-                  </div>
-                </div>
-                <!-- <div class="experience">
-                  <h3 class="title">Experience</h3>
-                  <div class="row">
-                    <div class="timeline-box">
-                      <div class="timeline shadow-dark">
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h3 class="timeline-date">
-                            <i class="fa fa-calendar"> 2012 - 2017</i>
-                          </h3>
-                          <h4 class="timeline-title">Biology</h4>
-                          <p class="timeline-text">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Culpa dolorum maiores delectus quae? Labore
-                            itaque quod asperiores id, omnis, veritatis quia
-                            laboriosam, nihil iure neque quis.
-                          </p>
+                    <div class="row">
+                        <!-- ===== Service item START ===== -->
+                        <div class="service-item pad-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-mobile-alt"></i>
+                                </div>
+                                <h2>Mobile</h2>
+                                <p>Adaptive website layout</p>
+                            </div>
                         </div>
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h3 class="timeline-date">
-                            <i class="fa fa-calendar"> 2022</i>
-                          </h3>
-                          <h4 class="timeline-title">Full Stack developer</h4>
-                          <p class="timeline-text">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Culpa dolorum maiores delectus quae? Labore
-                            itaque quod asperiores id, omnis, veritatis quia
-                            laboriosam, nihil iure neque quis.
-                          </p>
+                        <!-- ===== Service item END ===== -->
+                        <!-- ===== Service item START ===== -->
+                        <div class="service-item pad-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-laptop-code"></i>
+                                </div>
+                                <h2>Front-End</h2>
+                                <p>Cross-browser and cross-platform layout</p>
+                            </div>
                         </div>
-                      </div>
+                        <!-- ===== Service item END ===== -->
+                        <!-- ===== Service item START ===== -->
+                        <div class="service-item pad-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-palette"></i>
+                                </div>
+                                <h2>Web Design</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Quidem, laborum. Ea,
+                                    magnam.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- ===== Service item END ===== -->
+                        <!-- ===== Service item START ===== -->
+                        <div class="service-item pad-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-code"></i>
+                                </div>
+                                <h2>Back-End</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Quidem, laborum. Ea,
+                                    magnam.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- ===== Service item END ===== -->
+                        <!-- ===== Service item START ===== -->
+                        <div class="service-item pad-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                                <h2>Front-End</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Quidem, laborum. Ea,
+                                    magnam.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- ===== Service item END ===== -->
+                        <!-- ===== Service item START ===== -->
+                        <div class="service-item pad-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-bullhorn"></i>
+                                </div>
+                                <h2>Front-End</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Quidem, laborum. Ea,
+                                    magnam.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- ===== Service item END ===== -->
                     </div>
-                  </div>
-                </div> -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- ===== About section END ===== -->
-      <!-- ===== Services section START ===== -->
-      <section class="section services" id="services">
-        <div class="container">
-          <div class="row">
-            <div class="section-title pad-15">
-              <h2>Services</h2>
-            </div>
-          </div>
-          <div class="row">
-            <!-- ===== Service item START ===== -->
-            <div class="service-item pad-15">
-              <div class="service-item-inner">
-                <div class="icon"><i class="fa fa-mobile-alt"></i></div>
-                <h2>Mobile</h2>
-                <p>Adaptive website layout</p>
-              </div>
-            </div>
-            <!-- ===== Service item END ===== -->
-            <!-- ===== Service item START ===== -->
-            <div class="service-item pad-15">
-              <div class="service-item-inner">
-                <div class="icon"><i class="fa fa-laptop-code"></i></div>
-                <h2>Front-End</h2>
-                <p>Cross-browser and cross-platform layout</p>
-              </div>
-            </div>
-            <!-- ===== Service item END ===== -->
-            <!-- ===== Service item START ===== -->
-            <div class="service-item pad-15">
-              <div class="service-item-inner">
-                <div class="icon"><i class="fa fa-palette"></i></div>
-                <h2>Web Design</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quidem, laborum. Ea, magnam.
-                </p>
-              </div>
-            </div>
-            <!-- ===== Service item END ===== -->
-            <!-- ===== Service item START ===== -->
-            <div class="service-item pad-15">
-              <div class="service-item-inner">
-                <div class="icon"><i class="fa fa-code"></i></div>
-                <h2>Back-End</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quidem, laborum. Ea, magnam.
-                </p>
-              </div>
-            </div>
-            <!-- ===== Service item END ===== -->
-            <!-- ===== Service item START ===== -->
-            <div class="service-item pad-15">
-              <div class="service-item-inner">
-                <div class="icon"><i class="fa fa-search"></i></div>
-                <h2>Front-End</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quidem, laborum. Ea, magnam.
-                </p>
-              </div>
-            </div>
-            <!-- ===== Service item END ===== -->
-            <!-- ===== Service item START ===== -->
-            <div class="service-item pad-15">
-              <div class="service-item-inner">
-                <div class="icon"><i class="fa fa-bullhorn"></i></div>
-                <h2>Front-End</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quidem, laborum. Ea, magnam.
-                </p>
-              </div>
-            </div>
-            <!-- ===== Service item END ===== -->
-          </div>
-        </div>
-      </section>
-      <!-- ===== Services section END ===== -->
-      <!-- ===== Portfolio section START ===== -->
-      <section class="portfolio section" id="portfolio">
-        <div class="container">
-          <div class="row">
-            <div class="section-title pad-15">
-              <h2>Portfolio</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="portfolio-heading pad-15">
-              <h2>My Last project:</h2>
-            </div>
-          </div>
-          <div class="row">
-            <!-- ===== Portfolio item START ===== -->
-            <div class="portfolio-item pad-15">
-              <div class="portfolio-item-inner shadow-dark">
-                <a
-                  class="portfolio-img"
-                  href="https://aleksandrvyshnyvetskyi.github.io/js_team_project/"
-                  target="_blank"
-                  ><img src="./css/img/portfolio/filmoteka.jpg" alt="filmoteka"
-                /></a>
-                <p>Filmoteka</p>
-              </div>
-            </div>
-            <!-- ===== Portfolio item END ===== -->
-            <!-- ===== Portfolio item START ===== -->
-            <div class="portfolio-item pad-15">
-              <div class="portfolio-item-inner shadow-dark">
-                <a
-                  class="portfolio-img"
-                  href="https://aleksandrvyshnyvetskyi.github.io/black-wild-tattoo/"
-                  target="_blank"
-                  ><img
-                    src="./css/img/portfolio/wild-tattoo.jpg"
-                    alt="black wild tattoo"
-                /></a>
-                <p>The Black Wild Tattoo</p>
-              </div>
-            </div>
-            <!-- ===== Portfolio item END ===== -->
-            <!-- ===== Portfolio item START ===== -->
-            <div class="portfolio-item pad-15">
-              <div class="portfolio-item-inner shadow-dark">
-                <a
-                  class="portfolio-img"
-                  href="https://aleksandrvyshnyvetskyi.github.io/IceCream/"
-                  target="_blank"
-                  ><img src="./css/img/portfolio/ice-cream.jpg" alt="ice cream"
-                /></a>
-                <p>IceCream</p>
-              </div>
-            </div>
-            <!-- ===== Portfolio item END ===== -->
-            <!-- ===== Portfolio item START ===== -->
-            <div class="portfolio-item pad-15">
-              <div class="portfolio-item-inner shadow-dark">
-                <a
-                  href="https://pedantic-swanson-01d471.netlify.app/"
-                  target="_blank"
-                  class="portfolio-img"
-                  ><img src="./css/img/portfolio/sw.jpg" alt="star wars"
-                /></a>
-                <p>StarWars</p>
-              </div>
-            </div>
-            <!-- ===== Portfolio item END ===== -->
-            <!-- ===== Portfolio item START ===== -->
-            <div class="portfolio-item pad-15">
-              <div class="portfolio-item-inner shadow-dark">
-                <a
-                  href="https://aleksandrvyshnyvetskyi.github.io/goit-markup-hw-08/"
-                  target="_blank"
-                  class="portfolio-img"
-                  ><img
-                    src="./css/img/portfolio/web-studio.jpg"
-                    alt="web studio"
-                /></a>
-                <p>WebStudio</p>
-              </div>
-            </div>
-            <!-- ===== Portfolio item END ===== -->
-          </div>
-        </div>
-      </section>
-      <!-- ===== Portfolio section END ===== -->
-      <!-- ===== Contact section START ===== -->
-      <secton class="contact section" id="contact">
-        <div class="container">
-          <div class="row">
-            <div class="section-title pad-15">
-              <h2>Contact Me</h2>
-            </div>
-          </div>
-          <h3 class="contact-title pad-15">Have You Any Questions ?</h3>
-          <h4 class="contact-sub-title pad-15">I`M AT YOUR SERVICES</h4>
-          <div class="row">
-            <!-- ===== Contact info item START ===== -->
-            <div class="contact-info-item pad-15">
-              <div class="icon">
-                <i class="fa fa-phone"></i>
-              </div>
-              <h4>Call Us On</h4>
-              <a class="cont" href="tel:+380660229626">+38(066) 022 96 26</a>
-            </div>
-            <!-- ===== Contact info item END ===== --><!-- ===== Contact info item START ===== -->
-            <div class="contact-info-item pad-15">
-              <div class="icon">
-                <i class="fa-brands fa-telegram"></i>
-              </div>
-              <h4>Telegram</h4>
-              <a class="cont" target="_blank" href="https://t.me/Aleksander9626"
-                >@Aleksander9626</a
-              >
-            </div>
-            <!-- ===== Contact info item END ===== -->
-            <!-- ===== Contact info item START ===== -->
-            <div class="contact-info-item pad-15">
-              <div class="icon">
-                <i class="fa fa-envelope"></i>
-              </div>
-              <h4>Email</h4>
-              <a
-                class="cont"
-                subject="New order"
-                href="mailto:vishniveckijj1994@gmail.com"
-                >vishniveckijj1994@gmail.com</a
-              >
-            </div>
-            <!-- ===== Contact info item END ===== -->
-            <!-- ===== Contact info item START ===== -->
-            <div class="contact-info-item pad-15">
-              <div class="icon">
-                <i class="fa fa-map-marker-alt"></i>
-              </div>
-              <h4>Office</h4>
-              <a
-                class="cont"
-                target="_blank"
-                href="https://goo.gl/maps/qjeAboSLL2URVzhs6"
-                >Kryvyi Rih | Ukraine</a
-              >
-            </div>
-            <!-- ===== Contact info item END ===== -->
-          </div>
-          <h3 class="contact-title pad-15">SEND ME AN EMAIL</h3>
-          <h4 class="contact-sub-title pad-15">
-            I'M VERY RESPONSIVE TO MESSAGES
-          </h4>
-          <!-- ===== Contact form START ===== -->
-          <div class="row">
-            <form class="contact-form pad-15" autocomplete="off">
-              <div class="contact-form-box">
-                <div class="row">
-                  <div class="form-item col-6 pad-15">
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        name="name"
-                        class="form-control _req"
-                        placeholder="Name"
-                        autocomplete="off"
-                      />
-                    </div>
-                  </div>
-                  <div class="form-item col-6 pad-15">
-                    <div class="form-group">
-                      <input
-                        type="email"
-                        name="email"
-                        class="form-control _req"
-                        placeholder="Email"
-                        autocomplete="off"
-                      />
-                    </div>
-                  </div>
                 </div>
-                <div class="row">
-                  <div class="form-item col-12 pad-15">
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        name="subject"
-                        class="form-control _req"
-                        placeholder="Subject"
-                        autocomplete="off"
-                      />
+            </section>
+            <!-- ===== Services section END ===== -->
+            <!-- ===== Portfolio section START ===== -->
+            <section class="portfolio section" id="portfolio">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title pad-15">
+                            <h2>Portfolio</h2>
+                        </div>
                     </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="form-item col-12 pad-15">
-                    <div class="form-group">
-                      <textarea
-                        class="form-control _req"
-                        name="message"
-                        id=""
-                        placeholder="Message"
-                        autocomplete="off"
-                      ></textarea>
+                    <div class="row">
+                        <div class="portfolio-heading pad-15">
+                            <h2>My Last project:</h2>
+                        </div>
                     </div>
-                  </div>
+                    <div class="row">
+                        <!-- ===== Portfolio item START ===== -->
+                        <div class="portfolio-item pad-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <a
+                                    class="portfolio-img"
+                                    href="https://aleksandrvyshnyvetskyi.github.io/js_team_project/"
+                                    target="_blank"
+                                    ><img
+                                        src="./css/img/portfolio/filmoteka-min.webp"
+                                        alt="filmoteka"
+                                /></a>
+                                <p>Filmoteka</p>
+                            </div>
+                        </div>
+                        <!-- ===== Portfolio item END ===== -->
+                        <!-- ===== Portfolio item START ===== -->
+                        <div class="portfolio-item pad-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <a
+                                    class="portfolio-img"
+                                    href="https://aleksandrvyshnyvetskyi.github.io/black-wild-tattoo/"
+                                    target="_blank"
+                                    ><img
+                                        src="./css/img/portfolio/wild-tattoo-min.webp"
+                                        alt="black wild tattoo"
+                                /></a>
+                                <p>The Black Wild Tattoo</p>
+                            </div>
+                        </div>
+                        <!-- ===== Portfolio item END ===== -->
+                        <!-- ===== Portfolio item START ===== -->
+                        <div class="portfolio-item pad-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <a
+                                    class="portfolio-img"
+                                    href="https://aleksandrvyshnyvetskyi.github.io/IceCream/"
+                                    target="_blank"
+                                    ><img
+                                        src="./css/img/portfolio/ice-cream-min.webp"
+                                        alt="ice cream"
+                                /></a>
+                                <p>IceCream</p>
+                            </div>
+                        </div>
+                        <!-- ===== Portfolio item END ===== -->
+                        <!-- ===== Portfolio item START ===== -->
+                        <div class="portfolio-item pad-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <a
+                                    href="https://pedantic-swanson-01d471.netlify.app/"
+                                    target="_blank"
+                                    class="portfolio-img"
+                                    ><img
+                                        src="./css/img/portfolio/sw-min.webp"
+                                        alt="star wars"
+                                /></a>
+                                <p>StarWars</p>
+                            </div>
+                        </div>
+                        <!-- ===== Portfolio item END ===== -->
+                        <!-- ===== Portfolio item START ===== -->
+                        <div class="portfolio-item pad-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <a
+                                    href="https://aleksandrvyshnyvetskyi.github.io/goit-markup-hw-08/"
+                                    target="_blank"
+                                    class="portfolio-img"
+                                    ><img
+                                        src="./css/img/portfolio/web-studio-min.webp"
+                                        alt="web studio"
+                                /></a>
+                                <p>WebStudio</p>
+                            </div>
+                        </div>
+                        <!-- ===== Portfolio item END ===== -->
+                    </div>
                 </div>
-                <div class="row">
-                  <div class="form-item col-12 pad-15">
-                    <button type="submit" class="btn">Send Message</button>
-                  </div>
+            </section>
+            <!-- ===== Portfolio section END ===== -->
+            <!-- ===== Contact section START ===== -->
+            <secton class="contact section" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title pad-15">
+                            <h2>Contact Me</h2>
+                        </div>
+                    </div>
+                    <h3 class="contact-title pad-15">
+                        Have You Any Questions ?
+                    </h3>
+                    <h4 class="contact-sub-title pad-15">
+                        I`M AT YOUR SERVICES
+                    </h4>
+                    <div class="row">
+                        <!-- ===== Contact info item START ===== -->
+                        <div class="contact-info-item pad-15">
+                            <div class="icon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <h4>Call Us On</h4>
+                            <a class="cont" href="tel:+380660229626"
+                                >+38(066) 022 96 26</a
+                            >
+                        </div>
+                        <!-- ===== Contact info item END ===== --><!-- ===== Contact info item START ===== -->
+                        <div class="contact-info-item pad-15">
+                            <div class="icon">
+                                <i class="fa-brands fa-telegram"></i>
+                            </div>
+                            <h4>Telegram</h4>
+                            <a
+                                class="cont"
+                                target="_blank"
+                                href="https://t.me/Aleksander9626"
+                                >@Aleksander9626</a
+                            >
+                        </div>
+                        <!-- ===== Contact info item END ===== -->
+                        <!-- ===== Contact info item START ===== -->
+                        <div class="contact-info-item pad-15">
+                            <div class="icon">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                            <h4>Email</h4>
+                            <a
+                                class="cont"
+                                subject="New order"
+                                href="mailto:vishniveckijj1994@gmail.com"
+                                >vishniveckijj1994@gmail.com</a
+                            >
+                        </div>
+                        <!-- ===== Contact info item END ===== -->
+                        <!-- ===== Contact info item START ===== -->
+                        <div class="contact-info-item pad-15">
+                            <div class="icon">
+                                <i class="fa fa-map-marker-alt"></i>
+                            </div>
+                            <h4>Office</h4>
+                            <a
+                                class="cont"
+                                target="_blank"
+                                href="https://goo.gl/maps/qjeAboSLL2URVzhs6"
+                                >Kryvyi Rih | Ukraine</a
+                            >
+                        </div>
+                        <!-- ===== Contact info item END ===== -->
+                    </div>
+                    <h3 class="contact-title pad-15">SEND ME AN EMAIL</h3>
+                    <h4 class="contact-sub-title pad-15">
+                        I'M VERY RESPONSIVE TO MESSAGES
+                    </h4>
+                    <!-- ===== Contact form START ===== -->
+                    <div class="row">
+                        <form class="contact-form pad-15" autocomplete="off">
+                            <div class="contact-form-box">
+                                <div class="row">
+                                    <div class="form-item col-6 pad-15">
+                                        <div class="form-group">
+                                            <input
+                                                type="text"
+                                                name="name"
+                                                class="form-control _req"
+                                                placeholder="Name"
+                                                autocomplete="off"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="form-item col-6 pad-15">
+                                        <div class="form-group">
+                                            <input
+                                                type="email"
+                                                name="email"
+                                                class="form-control _req"
+                                                placeholder="Email"
+                                                autocomplete="off"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-item col-12 pad-15">
+                                        <div class="form-group">
+                                            <input
+                                                type="text"
+                                                name="subject"
+                                                class="form-control _req"
+                                                placeholder="Subject"
+                                                autocomplete="off"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-item col-12 pad-15">
+                                        <div class="form-group">
+                                            <textarea
+                                                class="form-control _req"
+                                                name="message"
+                                                id=""
+                                                placeholder="Message"
+                                                autocomplete="off"
+                                            ></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-item col-12 pad-15">
+                                        <button type="submit" class="btn">
+                                            Send Message
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- ===== Contact form END ===== -->
                 </div>
-              </div>
-            </form>
-          </div>
-          <!-- ===== Contact form END ===== -->
+            </secton>
+            <!-- ===== Contact section END ===== -->
         </div>
-      </secton>
-      <!-- ===== Contact section END ===== -->
-    </div>
-    <!-- ===== Main Content END ===== -->
-    <!-- ===== Main Conteiner END ===== -->
-    <!-- ===== Style switcher START ===== -->
-    <div class="style-switcher">
-      <div class="style-switcher-toggler s-icon">
-        <i class="fas fa-cog fa-spin"></i>
-      </div>
-      <div class="day-night s-icon">
-        <i class="fas"></i>
-      </div>
-      <h4>Theme Colors</h4>
-      <div class="colors">
-        <span
-          class="color-1"
-          style="background: #fa5b0f"
-          onclick="setColor('#fa5b0f')"
-        ></span>
-        <span
-          class="color-2"
-          style="background: #ec1839"
-          onclick="setColor('#ec1839')"
-        ></span>
-        <span
-          class="color-3"
-          style="background: #37b182"
-          onclick="setColor('#37b182')"
-        ></span>
-        <span
-          class="color-4"
-          style="background: #1854b4"
-          onclick="setColor('#1854b4')"
-        ></span>
-        <span
-          class="color-5"
-          style="background: #9718ff"
-          onclick="setColor('#9718ff')"
-        ></span>
-      </div>
-    </div>
-    <!-- ===== Style switcher END ===== -->
-    <!-- ===== JS ===== -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="./js/library/notiflix-Notiflix-dfaf93f/dist/notiflix-3.2.5.min.js"></script>
-    <script src="js/animation.js" type="module"></script>
-    <script src="js/style-switcher.js"></script>
-    <script src="js/aside.js" type="module"></script>
-    <script src="js/form.js" type="module"></script>
-  </body>
+        <!-- ===== Main Content END ===== -->
+        <!-- ===== Main Conteiner END ===== -->
+        <!-- ===== Style switcher START ===== -->
+        <div class="style-switcher">
+            <div class="style-switcher-toggler s-icon">
+                <i class="fas fa-cog fa-spin"></i>
+            </div>
+            <div class="day-night s-icon">
+                <i class="fas"></i>
+            </div>
+            <h4>Theme Colors</h4>
+            <div class="colors">
+                <span
+                    class="color-1"
+                    style="background: #fa5b0f"
+                    onclick="setColor('#fa5b0f')"
+                ></span>
+                <span
+                    class="color-2"
+                    style="background: #ec1839"
+                    onclick="setColor('#ec1839')"
+                ></span>
+                <span
+                    class="color-3"
+                    style="background: #37b182"
+                    onclick="setColor('#37b182')"
+                ></span>
+                <span
+                    class="color-4"
+                    style="background: #1854b4"
+                    onclick="setColor('#1854b4')"
+                ></span>
+                <span
+                    class="color-5"
+                    style="background: #9718ff"
+                    onclick="setColor('#9718ff')"
+                ></span>
+            </div>
+        </div>
+        <!-- ===== Style switcher END ===== -->
+        <!-- ===== JS ===== -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="./js/library/notiflix-Notiflix-dfaf93f/dist/notiflix-3.2.5.min.js"></script>
+        <script src="js/animation.js" type="module"></script>
+        <script src="js/style-switcher.js"></script>
+        <script src="js/aside.js" type="module"></script>
+        <script src="js/form.js" type="module"></script>
+    </body>
 </html>
