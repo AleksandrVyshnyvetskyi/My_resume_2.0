@@ -1028,6 +1028,10 @@ ul {
         margin-bottom: 35px;
     }
 
+    #home-btn {
+        margin-bottom: 50px;
+    }
+
     .about .about-content .personal-info,
     .about .about-content .personal-info .info-item,
     .about .about-content .skills,
