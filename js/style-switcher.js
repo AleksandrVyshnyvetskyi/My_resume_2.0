@@ -9,6 +9,14 @@ styleSwitcherToggle.addEventListener("click", () => {
     //   }, 5000);
 });
 
+document.addEventListener("click", (event) => {
+    if (styleSwitcher.classList.contains("open")) {
+        if (!styleSwitcher.contains(event.target)) {
+            styleSwitcher.classList.remove("open");
+        }
+    }
+});
+
 const closeSwitcherOnClick = document.addEventListener("click", (event) => {
     const container = document.querySelector("div");
     if (event.target === container) {
