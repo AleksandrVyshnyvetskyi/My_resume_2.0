@@ -1009,7 +1009,8 @@ ul {
     }
 
     .section .container {
-        padding: 0 15px;
+        padding: 40px 15px;
+        
         margin-bottom: 100px;
         /* height: 1000px; */
     }
