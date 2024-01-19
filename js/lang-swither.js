@@ -127,36 +127,48 @@ function changeLanguage(language) {
         },
     };
 
-    home.innerHTML = languageData[language].home;
-    about.innerHTML = languageData[language].about;
-    services.innerHTML = languageData[language].services;
-    portfolio.innerHTML = languageData[language].portfolio;
-    contact.innerHTML = languageData[language].contact;
-    hello.innerHTML = languageData[language].hello;
-    homeMessage.innerText = languageData[language].homeMessage;
-    homeBtn.innerText = languageData[language].homeBtn;
-    aboutTitle.innerHTML = languageData[language].aboutTitle;
-    aboutText.innerHTML = languageData[language].aboutText;
-    birthday.innerHTML = languageData[language].birthday;
-    age.innerHTML = languageData[language].age;
-    phone.innerHTML = languageData[language].phone;
-    city.innerHTML = languageData[language].city;
-    education.innerHTML = languageData[language].education;
-    hireMe.innerText = languageData[language].hireMe;
-    educationTitle.innerText = languageData[language].educationTitle;
-    facultet.innerText = languageData[language].facultet;
-    specialty.innerText = languageData[language].specialty;
-    servecesTitle.innerText = languageData[language].servecesTitle;
-    serviceMbile.innerText = languageData[language].serviceMbile;
-    serviceFront.innerText = languageData[language].serviceFront;
-    serviceDesign.innerText = languageData[language].serviceDesign;
-    // serviceStudy.innerText = languageData[language].serviceStudy;
-    portfolioTitle.innerText = languageData[language].portfolioTitle;
-    lastPjt.innerText = languageData[language].lastPjt;
-    firstContactTitle.innerText = languageData[language].firstContactTitle;
-    secondContactTitle.innerText = languageData[language].secondContactTitle;
-    thirdContactTitle.innerText = languageData[language].thirdContactTitle;
-    contactTel.innerText = languageData[language].contactTel;
-    sendMeTitle.innerText = languageData[language].sendMeTitle;
-    contactBtn.innerText = languageData[language].contactBtn;
+    localStorage.setItem("preferredLanguage", language);
+    applyLanguage(languageData[language]);
+}
+
+function applyLanguage(data) {
+    home.innerHTML = data.home;
+    about.innerHTML = data.about;
+    services.innerHTML = data.services;
+    portfolio.innerHTML = data.portfolio;
+    contact.innerHTML = data.contact;
+    hello.innerHTML = data.hello;
+    homeMessage.innerText = data.homeMessage;
+    homeBtn.innerText = data.homeBtn;
+    aboutTitle.innerHTML = data.aboutTitle;
+    aboutText.innerHTML = data.aboutText;
+    birthday.innerHTML = data.birthday;
+    age.innerHTML = data.age;
+    phone.innerHTML = data.phone;
+    city.innerHTML = data.city;
+    education.innerHTML = data.education;
+    hireMe.innerText = data.hireMe;
+    educationTitle.innerText = data.educationTitle;
+    facultet.innerText = data.facultet;
+    specialty.innerText = data.specialty;
+    servecesTitle.innerText = data.servecesTitle;
+    serviceMbile.innerText = data.serviceMbile;
+    serviceFront.innerText = data.serviceFront;
+    serviceDesign.innerText = data.serviceDesign;
+    // serviceStudy.innerText = data.serviceStudy;
+    portfolioTitle.innerText = data.portfolioTitle;
+    lastPjt.innerText = data.lastPjt;
+    firstContactTitle.innerText = data.firstContactTitle;
+    secondContactTitle.innerText = data.secondContactTitle;
+    thirdContactTitle.innerText = data.thirdContactTitle;
+    contactTel.innerText = data.contactTel;
+    sendMeTitle.innerText = data.sendMeTitle;
+    contactBtn.innerText = data.contactBtn;
+}
+
+const preferredLanguage = localStorage.getItem("preferredLanguage");
+
+// Если язык был выбран, применяем его
+if (preferredLanguage) {
+    changeLanguage(preferredLanguage);
 }
