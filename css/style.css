@@ -327,7 +327,7 @@ ul {
     color: var(--color-skin);
 }
 
-.home-info p {
+.home-message {
     margin-bottom: 70px;
     font-size: 20px;
     color: var(--text-black-700);
@@ -1002,6 +1002,30 @@ ul {
 }
 
 @media (max-width:767px) {
+    .section {
+        height: 100svh;
+    }
+
+    .container {
+        padding: 40px 0;
+        margin: 0;
+    }
+
+    .home-info{
+        margin-top: 15px;
+    }
+
+    .hello {
+        margin-top: 30px;
+    }
+
+    .my-profession{
+        margin-top: 15px;
+    }
+
+    .home-message {
+        margin-bottom: 35px;
+    }
 
     .about .about-content .personal-info,
     .about .about-content .personal-info .info-item,
@@ -1046,5 +1070,9 @@ ul {
 
     .my-profession {
         height: 80px;
+    }
+
+    .experience {
+        margin-bottom: 60px;
     }
 }
