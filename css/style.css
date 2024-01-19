@@ -48,7 +48,7 @@ ul {
 }
 .section {
     background: var(--bg-black-900);
-    min-height: 100vh;
+    /* min-height: 100vh; */
     padding: 20px 30px;
     display: block;
     opacity: 1;
@@ -1003,12 +1003,15 @@ ul {
 
 @media (max-width:767px) {
     .section {
-        height: 100svh;
+        padding: 15px;
+        margin: 0;
+        height: auto;
     }
 
-    .container {
-        padding: 40px 0;
-        margin: 0;
+    .section .container {
+        padding: 0 15px;
+        margin-bottom: 100px;
+        /* height: 1000px; */
     }
 
     .home-info{
@@ -1054,6 +1057,16 @@ ul {
 
     .aside {
         width: 190px;
+        padding: 10px;
+        justify-content: flex-start;
+    }
+
+    .aside .nav {
+        margin-top: 10px;
+    }
+
+    .aside .logo {
+        margin-top: 25px;
     }
 
     .section.open {
@@ -1070,9 +1083,5 @@ ul {
 
     .my-profession {
         height: 80px;
-    }
-
-    .experience {
-        margin-bottom: 60px;
     }
 }
