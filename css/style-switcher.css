@@ -71,3 +71,19 @@
     border: 2px solid var(--text-black-900);
     transform: scale(1.2);
 }
+
+.style-switcher .lang-switcher {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.style-switcher .lang-switcher svg {
+    width: 50px;
+    height: 30px;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.style-switcher .lang-switcher svg:hover {
+    transform: scale(1.2);
+}
