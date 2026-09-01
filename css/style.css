@@ -1110,11 +1110,7 @@ a:focus::after {
 	}
 
 	.home-message {
-		margin-bottom: 35px;
-	}
-
-	#home-btn {
-		margin-bottom: 50px;
+		margin-bottom: 25px;
 	}
 
 	.about .about-content .personal-info,
@@ -1170,5 +1166,9 @@ a:focus::after {
 
 	.my-profession {
 		height: 80px;
+	}
+
+	.form-btn-wrapper {
+		text-align: center;
 	}
 }
