@@ -853,7 +853,6 @@ a:focus::after {
 	overflow: hidden;
 	transition: all 0.3s ease;
 	background-color: var(--bg-black-100);
-	/*     height: 226px; */
 }
 
 .portfolio .portfolio-item-inner:hover,
@@ -877,7 +876,7 @@ a:focus::after {
 
 .portfolio .portfolio-item-inner .portfolio-img img {
 	width: 100%;
-	/*     height: 182px; */
+	height: 180px;
 	display: block;
 	border-radius: 8px;
 	transition: all 0.7s ease;
