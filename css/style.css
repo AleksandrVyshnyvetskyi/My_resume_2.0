@@ -1161,6 +1161,8 @@ a:focus::after {
 
 	.aside.open {
 		left: 0;
+		display: flex;
+        justify-content: center;
 	}
 
 	.my-profession {
